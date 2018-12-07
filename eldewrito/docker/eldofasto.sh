@@ -80,7 +80,7 @@
       flavor=`lsb_release -cs`
       system=`lsb_release -i | grep "Distributor ID:" | sed 's/Distributor ID://g' | sed 's/["]//g' | awk '{print tolower($1)}'`
 
-      # Fetech for Docker and Setup/Install Eldewrito.
+      # Fetch for Docker and Setup/Install Eldewrito.
           read -r -p "Do you want to fetch Docker and install Eldewrito? (Y/N) " REPLY
             case "${REPLY,,}" in
               [yY]|[yY][eE][sS])
