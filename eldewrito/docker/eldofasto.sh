@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #===============================================================================================================================================
-# (C) Copyright 2013-2018 under the Crypto World Foundation (https://cryptoworld.is).
+# (C) Copyright 2018 under the United Federation of Gaming (https://ufg.gg).
 #
 # Licensed under the GNU GENERAL PUBLIC LICENSE, Version 3.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,14 +19,14 @@
 # description      :Setup/Installer for Eldewrito
 # author           :A Project Under The United Federation of Gaming.
 # contributors     :Beard, Kirk,
-# date             :12-06-2018
-# version          :0.0.4 Alpha
+# date             :12-07-2018
+# version          :0.0.5 Alpha
 # os               :Debian/Ubuntu (Debian 8 - 9 | Ubuntu 14.04 - 18.04)
 # usage            :bash eldofasto.sh
 # notes            :If you have any problems feel free to email us: help [AT] UFG [DOT] gg
 #===============================================================================================================================================
 
-# Setting up an update/upgrade global function
+# Setting up an update/upgrade glabal function
     function upkeep() {
       apt-get update -y
       apt-get dist-upgrade -y
@@ -80,16 +80,16 @@
       flavor=`lsb_release -cs`
       system=`lsb_release -i | grep "Distributor ID:" | sed 's/Distributor ID://g' | sed 's/["]//g' | awk '{print tolower($1)}'`
 
-      # Fetch for Docker and Setup/Install Eldewrito.
+      # Fetech for Docker and Setup/Install Eldewrito.
           read -r -p "Do you want to fetch Docker and install Eldewrito? (Y/N) " REPLY
             case "${REPLY,,}" in
               [yY]|[yY][eE][sS])
                     echo "Performing setup, and install of Eldewrito, and its utilities.."
-                      curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-                      sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$system $flavor stable"
+                      curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
+                      add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$system $flavor stable"
                     echo "Performing upkeep.."
                       upkeep
-                    echo "Fetching Docker.."
+                    echo "Feteching Docker.."
                       apt-cache policy docker-ce
                     echo "Performing install of Docker.."
                       apt install docker-ce
@@ -101,8 +101,8 @@
                       wget -qO- https://yourdomainhere.com/games.zip | bsdtar -xvf- -C /home/eldofasto/games
                     echo "Starting Eldewrito Docker Hold ON.."
                       cd /home/eldofasto/games
-                      wget https://raw.githubusercontent.com/beardlyness/UFG/master/eldewrito/docker/docker-compose.yml
-                      wget https://raw.githubusercontent.com/beardlyness/UFG/master/eldewrito/docker/defaults/dewrito_prefs.cfg
+                      wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/docker-compose.yml
+                      wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/defaults/dewrito_prefs.cfg
                       docker-compose up -d
                     echo "Grabbing Docker Status"
                       service docker status
