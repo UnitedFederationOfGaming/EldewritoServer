@@ -26,7 +26,7 @@
 # notes            :If you have any problems feel free to email us: help [AT] UFG [DOT] gg
 #===============================================================================================================================================
 
-# Setting up an update/upgrade glabal function
+# Setting up an update/upgrade global function
     function upkeep() {
       apt-get update -y
       apt-get dist-upgrade -y
@@ -85,11 +85,11 @@
             case "${REPLY,,}" in
               [yY]|[yY][eE][sS])
                     echo "Performing setup, and install of Eldewrito, and its utilities.."
-                      curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
-                      add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$system $flavor stable"
+                      curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+                      sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$system $flavor stable"
                     echo "Performing upkeep.."
                       upkeep
-                    echo "Feteching Docker.."
+                    echo "Fetching Docker.."
                       apt-cache policy docker-ce
                     echo "Performing install of Docker.."
                       apt install docker-ce
@@ -98,7 +98,7 @@
                       mkdir -p /home/eldofasto/games
                       mkdir -p /home/eldofasto/logs/
                       mkdir -p /home/eldofasto/config/
-                      wget -qO- https://yourdomainhere.com/games.zip | bsdtar -xvf- -C /home/eldofasto/games
+                      wget -qO- https://dl.unitedfederationofgaming.com/docker_taFVfbjKpYmBee/elpayloado.zip | bsdtar -xvf- -C /home/eldofasto/games
                     echo "Starting Eldewrito Docker Hold ON.."
                       cd /home/eldofasto/games
                       wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/docker-compose.yml
