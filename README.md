@@ -4,7 +4,7 @@ Project by: United Federation of Gaming
 <h1 align="center">
   <a href="https://EldewritoServer.com"><img src="https://gg.beard.gg/images/logo-main.png" alt="Eldewrito Server" width="300"></a>
  <br />
-    EldewritoServer.com
+    Eldewrito Server
 </h1>
 
 <p align="center">Project stuff for Eldewrito Server</p>
