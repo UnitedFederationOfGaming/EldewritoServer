@@ -19,7 +19,7 @@
 # description      :Setup/Installer for Eldewrito
 # author           :A Project Under The United Federation of Gaming.
 # contributors     :Beard, Kirk,
-# date             :12-04-2018
+# date             :12-06-2018
 # version          :0.0.4 Alpha
 # os               :Debian/Ubuntu (Debian 8 - 9 | Ubuntu 14.04 - 18.04)
 # usage            :bash eldofasto.sh
