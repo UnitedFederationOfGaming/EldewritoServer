@@ -89,7 +89,7 @@
                       sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$system $flavor stable"
                     echo "Performing upkeep.."
                       upkeep
-                    echo "Feteching Docker.."
+                    echo "Fetching Docker.."
                       apt-cache policy docker-ce
                     echo "Performing install of Docker.."
                       apt install docker-ce
