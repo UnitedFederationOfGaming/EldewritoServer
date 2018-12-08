@@ -1,0 +1,80 @@
+{
+  "Maps": [
+    {
+      "displayName": "Standoff",
+      "mapName": "Bunkerworld"
+    },
+    {
+      "displayName": "Sandtrap",
+      "mapName": "Shrine"
+    },
+    {
+      "displayName": "Icebox",
+      "mapName": "s3d_turf"
+    },
+	{
+      "displayName": "Reactor",
+      "mapName": "s3d_reactor"
+    },
+    {
+      "displayName": "Narrows",
+      "mapName": "Chill"
+    },
+    {
+      "displayName": "High Ground",
+      "mapName": "Deadlock"
+    },
+    {
+      "displayName": "Last Resort",
+      "mapName": "Zanzibar"
+    },
+    {
+      "displayName": "Valhalla",
+      "mapName": "riverworld"
+    },
+    {
+      "displayName": "The Pit",
+      "mapName": "Cyberdyne"
+    },
+    {
+      "displayName": "Toxic Fat Kid V1",
+      "mapName": "Toxic Fatkid V1"
+    },
+    {
+      "displayName": "Reduced Calories",
+      "mapName": "ReducedCalories"
+    }
+  ],
+  "Types": [
+    {
+      "displayName": "Minotaurs",
+      "typeName": "Minotaurs",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Speed Halo",
+      "typeName": "Speed Halo",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Drive Or Die ON",
+      "typeName": "Drive Or Die ON",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Fat kid",
+      "typeName": "Fat kid",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"],
+      "SpecificMaps": [
+        {
+          "displayName": "Toxic Fat Kid V1",
+          "mapName": "Toxic Fatkid V1"
+        },
+        {
+          "displayName": "Reduced Calories",
+          "mapName": "ReducedCalories"
+        }
+      ]
+    }
+  ]
+}

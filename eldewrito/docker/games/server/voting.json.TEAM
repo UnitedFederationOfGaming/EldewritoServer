@@ -1,0 +1,70 @@
+{
+  "Maps": [
+    {
+      "displayName": "Standoff",
+      "mapName": "Bunkerworld"
+    },
+    {
+      "displayName": "Sandtrap",
+      "mapName": "Shrine"
+    },
+    {
+      "displayName": "Icebox",
+      "mapName": "s3d_turf"
+    },
+	{
+      "displayName": "Reactor",
+      "mapName": "s3d_reactor"
+    },
+    {
+      "displayName": "Narrows",
+      "mapName": "Chill"
+    },
+    {
+      "displayName": "High Ground",
+      "mapName": "Deadlock"
+    },
+    {
+      "displayName": "Last Resort",
+      "mapName": "Zanzibar"
+    },
+    {
+      "displayName": "Valhalla",
+      "mapName": "riverworld"
+    },
+    {
+      "displayName": "The Pit",
+      "mapName": "Cyberdyne"
+    },
+    {
+      "displayName": "Guardian",
+      "mapName": "guardian"
+    },
+    {
+      "displayName": "Diamondback",
+      "mapName": "s3d_avalanche"
+    }
+  ],
+  "Types": [
+    {
+      "displayName": "Team Swat",
+      "typeName": "Team Swat",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Team BRs",
+      "typeName": "Team BRs",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Team Snipers",
+      "typeName": "Team Snipers",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Shotty Snipers",
+      "typeName": "Shotty Snipers",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    }
+  ]
+}
