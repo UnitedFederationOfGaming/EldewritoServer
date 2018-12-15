@@ -10,7 +10,7 @@ Project by: United Federation of Gaming
 <p align="center">Project stuff for Eldewrito Server</p>
 
 # General
-If you like anything from this repo give us a follow
+If you like anything from this repo, give us a follow!
 - Twitter/<a href="https://twitter.com/UFGKirk">UFGKirk</a>
 - Twitter/<a href="https://twitter.com/beardlyness">beardlyness</a>
 
