@@ -1,5 +1,5 @@
-# Pull ubuntu image
-FROM ubuntu:16.04
+# Pull debian image
+FROM debian:stretch
 
 # Set environment variables
 ENV CONTAINER_VERSION=0.4 \
@@ -13,14 +13,14 @@ ENV CONTAINER_VERSION=0.4 \
 
 # Install temporary packages
 RUN apt-get update && \
-    apt-get install -y wget software-properties-common apt-transport-https cabextract
+    apt-get install -y wget software-properties-common apt-transport-https cabextract gnupg2 
 
 # Install Wine stable
 RUN dpkg --add-architecture i386 && \
     wget https://dl.winehq.org/wine-builds/Release.key && \
     apt-key add Release.key && \
     rm Release.key && \
-    apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/ && \
+    apt-add-repository https://dl.winehq.org/wine-builds/debian/ && \
     apt-get update && \
     apt-get install -y winehq-staging
 
