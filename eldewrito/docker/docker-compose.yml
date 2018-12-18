@@ -2,7 +2,7 @@ version: '2'
 
 services:
   eldewrito:
-    image: domistyle/eldewrito
+    image: ufgcommunity/eldewrito
     restart: always
     ports:
       - 11774:11774/udp
