@@ -45,7 +45,7 @@ RUN apt-get remove -y wget software-properties-common apt-transport-https cabext
     rm -rf .cache/
 
 # Add the start script
-ADD start.sh .
+ADD /eldewrito/docker/start.sh .
 
 # Add the default configuration files
 ADD defaults defaults
