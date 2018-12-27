@@ -131,7 +131,8 @@
                   OPTIONS=(1 "Sharp Shooters"
                            2 "Action Sack"
                            3 "Viva La Fiesta"
-                           4 "Vanilla Custom")
+                           4 "Vanilla Custom"
+                           5 "Bitesized Maps")
 
                   CHOICE=$(dialog --clear \
                                   --backtitle "$BACKTITLE" \
@@ -179,6 +180,17 @@
                 wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/action-sack.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
                 wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/viva-la-fiesta.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
                 wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.VANILLA -O /home/eldofasto/games/mods/server/voting.json
+                echo "Grabbing Docker Status"
+                  service docker status
+                  docker stats
+                  ;;
+                4)
+                echo "Setting up Gamemode: Bitsized Maps"
+                mkdir -p /home/eldofasto/games/mods/variants
+                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/sharp-shooters.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/action-sack.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/viva-la-fiesta.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.BITESIZED -O /home/eldofasto/games/mods/server/voting.json
                 echo "Grabbing Docker Status"
                   service docker status
                   docker stats
