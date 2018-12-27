@@ -184,7 +184,7 @@
                   service docker status
                   docker stats
                   ;;
-                4)
+                5)
                 echo "Setting up Gamemode: Bitsized Maps"
                 mkdir -p /home/eldofasto/games/mods/variants
                 wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/sharp-shooters.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
