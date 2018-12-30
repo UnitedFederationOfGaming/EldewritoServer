@@ -149,7 +149,7 @@
                 1)
                 echo "Setting up Gamemode: Sharp Shooters"
                 mkdir -p /home/eldofasto/games/mods/variants
-                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/sharp-shooters.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget -qO- https://eldewritoserver.com/gametypes/all.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
                 wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.TEAM -O /home/eldofasto/games/mods/server/voting.json
                 echo "Grabbing Docker Status"
                   service docker status
@@ -159,6 +159,7 @@
                 echo "Setting up Gamemode: Action Sack"
                 mkdir -p /home/eldofasto/games/mods/variants
                 wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/action-sack.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget -qO- https://eldewritoserver.com/gametypes/all.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
                 wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.ACTION -O /home/eldofasto/games/mods/server/voting.json
                 echo "Grabbing Docker Status"
                   service docker status
@@ -167,7 +168,7 @@
                 3)
                 echo "Setting up Gamemode: Viva La Fiesta"
                 mkdir -p /home/eldofasto/games/mods/variants
-                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/viva-la-fiesta.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget -qO- https://eldewritoserver.com/gametypes/all.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
                 wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.FIESTA -O /home/eldofasto/games/mods/server/voting.json
                 echo "Grabbing Docker Status"
                   service docker status
@@ -176,9 +177,7 @@
                 4)
                 echo "Setting up Gamemode: Vanilla Custom"
                 mkdir -p /home/eldofasto/games/mods/variants
-                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/sharp-shooters.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
-                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/action-sack.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
-                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/viva-la-fiesta.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget -qO- https://eldewritoserver.com/gametypes/all.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
                 wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.VANILLA -O /home/eldofasto/games/mods/server/voting.json
                 echo "Grabbing Docker Status"
                   service docker status
@@ -187,9 +186,7 @@
                 5)
                 echo "Setting up Gamemode: Bitsized Maps"
                 mkdir -p /home/eldofasto/games/mods/variants
-                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/sharp-shooters.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
-                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/action-sack.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
-                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/variants/viva-la-fiesta.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget -qO- https://eldewritoserver.com/gametypes/all.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
                 wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.BITESIZED -O /home/eldofasto/games/mods/server/voting.json
                 echo "Grabbing Docker Status"
                   service docker status
