@@ -9,10 +9,6 @@
       "mapName": "Shrine"
     },
     {
-      "displayName": "Icebox",
-      "mapName": "s3d_turf"
-    },
-	{
       "displayName": "Reactor",
       "mapName": "s3d_reactor"
     },
@@ -39,10 +35,6 @@
     {
       "displayName": "Guardian",
       "mapName": "guardian"
-    },
-    {
-      "displayName": "Diamondback",
-      "mapName": "s3d_avalanche"
     }
   ],
   "Types": [
@@ -54,6 +46,11 @@
     {
       "displayName": "Team BRs",
       "typeName": "Team BRs",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Team DMRs",
+      "typeName": "Team DMRs",
       "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
     },
     {
