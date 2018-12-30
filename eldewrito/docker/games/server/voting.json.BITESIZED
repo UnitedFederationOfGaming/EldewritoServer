@@ -28,12 +28,12 @@
   "Types": [
     {
       "displayName": "Team King",
-      "typeName": "Team Crazy King",
+      "typeName": "Team King",
       "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
     },
     {
       "displayName": "Team SWAT",
-      "typeName": "Team SWAT",
+      "typeName": "Team Swat",
       "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"],
       "SpecificMaps": [
         {
@@ -61,6 +61,11 @@
       "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
     },
     {
+      "displayName": "Team DMRs",
+      "typeName": "Team DMRs",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
       "displayName": "Team Fiesta",
       "typeName": "Team Fiesta",
       "commands": [
@@ -70,7 +75,7 @@
     },
     {
       "displayName": "Multi Flag",
-      "typeName": "Team CTF",
+      "typeName": "Multi Flag",
       "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"],
       "SpecificMaps": [
         {
@@ -89,7 +94,7 @@
     },
     {
       "displayName": "FFA Oddball",
-      "typeName": "FFA Oddball",
+      "typeName": "Oddball",
       "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0"],
       "SpecificMaps": [
         {
