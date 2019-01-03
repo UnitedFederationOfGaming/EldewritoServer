@@ -132,7 +132,8 @@
                            2 "Action Sack"
                            3 "Viva La Fiesta"
                            4 "Vanilla Custom"
-                           5 "Bitesized Maps")
+                           5 "Bitesized Maps"
+                           6 "Halo 1 Remakes")
 
                   CHOICE=$(dialog --clear \
                                   --backtitle "$BACKTITLE" \
@@ -188,6 +189,17 @@
                 mkdir -p /home/eldofasto/games/mods/variants
                 wget -qO- https://eldewritoserver.com/gametypes/all.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
                 wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.BITESIZED -O /home/eldofasto/games/mods/server/voting.json
+                echo "Grabbing Docker Status"
+                  service docker status
+                  docker stats
+                  ;;
+                6)
+                echo "Setting up Gamemode: Halo 1 Remakes"
+                mkdir -p /home/eldofasto/games/mods/variants
+                mkdir -p /home/eldofasto/games/mods/maps
+                wget -qO- https://eldewritoserver.com/gametypes/all.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/variants
+                wget -qO- https://dl.unitedfederationofgaming.com/eldofasto/maps/halo1/halo1.zip | bsdtar -xvf- -C /home/eldofasto/games/mods/maps
+                wget https://raw.githubusercontent.com/UnitedFederationOfGaming/EldewritoServer/master/eldewrito/docker/games/server/voting.json.HALO1 -O /home/eldofasto/games/mods/server/voting.json
                 echo "Grabbing Docker Status"
                   service docker status
                   docker stats
