@@ -1,0 +1,70 @@
+{
+  "Maps": [
+    {
+      "displayName": "Burial Mounds",
+      "mapName": "BurialMounds H2"
+    },
+    {
+      "displayName": "Desolation",
+      "mapName": "Desolation [H2]"
+    },
+    {
+      "displayName": "Elongation",
+      "mapName": "Elongation [H2]"
+    },
+  	{
+      "displayName": "Foundation",
+      "mapName": "Foundation 1.3"
+    },
+    {
+      "displayName": "Ascension",
+      "mapName": "H2 Ascension"
+    },
+    {
+      "displayName": "Tombstone",
+      "mapName": "H2-Tombstone"
+    },
+    {
+      "displayName": "Waterworks",
+      "mapName": "H2-Waterworks+"
+    },
+    {
+      "displayName": "Regret",
+      "mapName": "Regret [H2C]"
+    }
+  ],
+  "Types": [
+    {
+      "displayName": "Team Snipers",
+      "typeName": "Team Snipers",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Team BRs",
+      "typeName": "Team BRs",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Team DMRs",
+      "typeName": "Team DMRs",
+      "commands": ["Server.SprintEnabled 0", "Server.AssassinationEnabled 0", "Server.NumberOfTeams 2"]
+    },
+    {
+      "displayName": "Team Fiesta",
+      "typeName": "Team Fiesta",
+      "commands": [
+        "Server.SprintEnabled 0",
+        "Server.AssassinationEnabled 0"
+      ]
+    },
+    {
+      "displayName": "Multi Flag",
+      "typeName": "Multi Flag",
+      "commands": [
+        "Server.SprintEnabled 0",
+        "Server.AssassinationEnabled 0",
+        "Server.NumberOfTeams 2"
+      ]
+    }
+  ]
+}
