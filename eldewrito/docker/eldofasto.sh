@@ -205,7 +205,7 @@
                   service docker status
                   docker stats
                   ;;
-                6)
+                7)
                 echo "Setting up Gamemode: Halo 2 Remakes"
                 mkdir -p /home/eldofasto/games/mods/variants
                 mkdir -p /home/eldofasto/games/mods/maps
