@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #===============================================================================================================================================
-# (C) Copyright 2018 under the United Federation of Gaming (https://ufg.gg).
+# (C) Copyright 2019 under the United Federation of Gaming (https://ufg.gg).
 #
 # Licensed under the GNU GENERAL PUBLIC LICENSE, Version 3.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@
 # description      :Setup/Installer for Eldewrito
 # author           :A Project Under The United Federation of Gaming.
 # contributors     :Beard, Kirk,
-# date             :12-11-2018
-# version          :0.0.7 Alpha
+# date             :04-28-2019
+# version          :0.0.8 Alpha
 # os               :Debian/Ubuntu (Debian 8 - 9 | Ubuntu 14.04 - 18.04)
 # usage            :bash eldofasto.sh
 # notes            :If you have any problems feel free to email us: help [AT] UFG [DOT] gg
@@ -34,51 +34,20 @@
     }
 
     # START
-
-    # Checking for multiple "required" pieces of software.
-        if
-          echo -e "\033[92mPerforming upkeep of system packages.. \e[0m"
+        
+  # Checking for multiple "required" pieces of software.
+    tools=( lsb_release wget curl dialog bsdtar software-properties-common gnupg2 dirmngr apt-transport-https ca-certificates )
+     grab_eware=""
+       for e in "${tools[@]}"; do
+         if command -v "$e" >/dev/null 2>&1; then
+           echo "Dependency $e is installed.."
+         else
+           echo "Dependency $e is not installed..?"
             upkeep
-          echo -e "\033[92mChecking software list..\e[0m"
-
-          [ ! -x  /usr/bin/lsb_release ] || [ ! -x  /usr/bin/wget ] || [ ! -x  /usr/bin/dialog ] || [ ! -x  /usr/bin/curl ] || [ ! -x  /usr/bin/apt-transport-https ] || [ ! -x  /usr/bin/software-properties-common ] || [ ! -x  /usr/bin/ca-certificates ] || [ ! -x  /usr/bin/gnupg2 ] ; then
-
-            echo -e "\033[92mlsb_release: checking for software..\e[0m"
-            echo -e "\033[34mInstalling lsb_release, Please Wait...\e[0m"
-              apt-get install lsb-release
-
-            echo -e "\033[92mcurl: checking for software..\e[0m"
-            echo -e "\033[34mInstalling curl, Please Wait...\e[0m"
-              apt-get install curl
-
-            echo -e "\033[92mbsdtar: checking for software..\e[0m"
-            echo -e "\033[34mInstalling bsdtar, Please Wait...\e[0m"
-              apt-get install bsdtar
-
-            echo -e "\033[92mwget: checking for software..\e[0m"
-            echo -e "\033[34mInstalling wget, Please Wait...\e[0m"
-              apt-get install wget
-
-            echo -e "\033[92mapt-transport-https: checking for software..\e[0m"
-            echo -e "\033[34mInstalling apt-transport-https, Please Wait...\e[0m"
-              apt-get install apt-transport-https
-
-            echo -e "\033[92msoftware-properties-common: checking for software..\e[0m"
-            echo -e "\033[34mInstalling software-properties-common, Please Wait...\e[0m"
-              apt-get install software-properties-common
-
-            echo -e "\033[92mca-certificates: checking for software..\e[0m"
-            echo -e "\033[34mInstalling ca-certificates, Please Wait...\e[0m"
-              apt-get install ca-certificates
-
-            echo -e "\033[92mgnupg2: checking for software..\e[0m"
-            echo -e "\033[34mInstalling gnupg2, Please Wait...\e[0m"
-              apt-get install gnupg2
-
-            echo -e "\033[92mdialog: checking for software..\e[0m"
-            echo -e "\033[34mInstalling dialog, Please Wait...\e[0m"
-              apt-get install dialog
-        fi
+            grab_eware="$grab_eware $e"
+         fi
+       done
+      apt-get install $grab_eware
 
     # Grabbing info on active machine.
       flavor=`lsb_release -cs`
@@ -123,7 +92,7 @@
                 [yY]|[yY][eE][sS])
                   HEIGHT=20
                   WIDTH=120
-                  CHOICE_HEIGHT=4
+                  CHOICE_HEIGHT=7
                   BACKTITLE="EldewritoServer Custom Gamemode Setup"
                   TITLE="ELDOFASTO"
                   MENU="Choose one of the following options:"
